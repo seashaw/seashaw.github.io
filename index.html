@@ -1,30 +1,346 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <title>
-      Colin Shaw
-    </title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>
-        Hello World!
-        <small>
-          How's it hanging?
-        </small>
-      </h1>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Font-Awesome CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  <title>
+    Colin Shaw - Portfolio & Contact
+  </title>
+</head>
+<body>
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="col-xs-5 col-sm-8 col-md-8 col-lg-8">
+      <a id="brand" class="selected navbar-brand" href="" onclick="return false;">
+        CS
+      </a>
     </div>
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
-  </body>
+    <div class="navbar-links col-xs-7 col-sm-4 col-md-4 col-lg-4 pull-right">
+      <div class="col-xs-6 nav-button">
+        <a id="works-button" href="" onclick="return false;">
+          WORKS 
+        </a>
+      </div>
+      <div class="col-xs-6 nav-button">
+        <a id="about-button" href="" onclick="return false;">
+          ABOUT
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="hero" class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img id="keyboard" class="img-responsive center-block"
+            src="img/keyboard.png">
+        </img>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p id="hero-title">
+          Programmer & Web Developer
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="works-outer" class="container-fluid">
+  <div id="works-inner" class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 id="works-title" class="section-title">
+          Works
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div id="image-site" class="work col-xs-12">
+        <a href="" data-toggle="modal" data-target="#image-modal">
+          <div id="image-site-header" class="col-xs-12">
+            <h4 class="work-title">
+              Case Study - Image Sharing Platform
+            </h4>
+          </div>
+          <div id="image-site-pic" class="work-pic col-xs-12">
+            <img src="img/ISmain.png" class="img-responsive center-block">
+          </div>
+        </a>
+      </div>
+
+      <div id="ascending-world" class="work col-xs-12">
+        <a href="" data-toggle="modal" data-target="#ascending-modal">
+          <div id="ascending-world-header" class="col-xs-12">
+            <h4 class="work-title">
+              AscendingWorld.com
+            </h4>
+          </div>
+          <div id="ascending-world-pic" class="work-pic col-xs-12">
+            <img src="img/AWmain.png" class="img-responsive center-block">
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="about-outer" class="container-fluid">
+  <div id="about-inner" class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 id="about-title" class="section-title">
+          About
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="about-body" class="col-xs-12">
+        <p>
+          My name is Colin Shaw and I'm a web application developer. I've been
+          building web applications for two years and the experience continues
+          to reward me. Enthusiastic and open-minded, I relish the opportunity 
+          to be a part of something amazing and to be able to use my expertise
+          to deliver reliable products. I strive to build web applications 
+          that are both functional and intuitive.
+        </p>
+        <p>
+          I enjoy spending my time learning new technologies and the ways they
+          can be used to solve problems. I love to experiment with new
+          paradigms and the fast-evolving world of web development suits me in 
+          this regard. Keeping up with current trends helps me to approach
+          problems both old and new with a fresh perspective.
+        </p>
+        <p>
+          I earned my certificate in Computer Programming Applications from 
+          the The Chang School of Continuing Education at Ryerson University 
+          in 2015.
+        </p>
+        <br>
+        <p>
+          Feel free to contact me if you have any questions and I'll get back 
+          to you as soon as possible.
+        </p>
+      </div>
+      <div id="about-contact" class="col-xs-12">
+        <div class="col-xs-4">
+          <div class="text-center">
+            <a id="contact-button" href="" data-toggle="modal"
+                data-target="#contact-modal">
+              <i class="fa fa-envelope-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="text-center">
+            <a id="github-button" target="_blank"
+                href="https://github.com/seashaw">
+              <i class="fa fa-github-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="text-center">
+            <a id="linkedin-button" target="_blank"
+                href="http://ca.linkedin.com/in/colinshaw87">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer" class="container-fluid">
+  <div id="info" class="container">
+    <p id="copyright">
+      <i class="fa fa-copyright"></i> 2015 Colin Shaw
+    </p>
+  </div>
+</div>
+
+<!-- Modals for portfolio. -->
+
+<div class="modal" id="image-modal" tabindex="-1" role="dialog"
+    aria-labelledby="image-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" 
+            aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+        <h4 class="modal-title" id="image-modal-title">
+          Case Study - Image Sharing Platform 
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                This was a case study to learn how to build and maintain an
+                image hosting and sharing platform. Imagined as a cross between
+                imgur and 9gag.
+              </p>
+              <p>
+                I originally started this project to learn more about handling
+                file uploads to a server as well as to familiarize myself with
+                the Python programming language and the <a target="_blank"
+                  href="http://flask.pocoo.org/">Flask</a> micro-framework.
+              </p>
+              <p>
+                The web application has gone through several iterations as I
+                learned more about the problem domain. Some of the features
+                that I've added over time:
+              </p>
+              <ul>
+                <li>
+                  User registration.
+                </li>
+                <li>
+                  Email-based user authentication.
+                </li>
+                <li>
+                  Role-based user management.
+                </li>
+                <li>
+                  Ability for users to create posts.
+                </li>
+                <li>
+                  Picture gallery management for user posts.
+                </li>
+                <li>
+                  User commenting system.
+                </li>
+                <li>
+                  Administrative functionality for authorized users.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank"
+            href="http://image-site.colinshaw.org">
+          image-site.colinshaw.org
+        </a>
+        <button type="button"  class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="ascending-modal" tabindex="-1" role="dialog"
+    aria-labelledby="ascending-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" 
+            aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+        <h4 class="modal-title" id="image-modal-title">
+          AscendingWorld.com
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                Ascending World is a social media platform with a focus on 
+                increasing social awareness to bring about positive change.
+              </p>
+              <p>
+                I was asked to help implement back-end functionality for the 
+                web application. I lead design workshops and was an important 
+                part of the decision making process.
+              </p>
+              <p>
+                Most of my time spent with the Ascending World team involved
+                setting up the database for the web application information,
+                defining a normalized schema, and writing functions in PHP
+                for CRUD interactions with the database. I promoted the use of
+                the PDO module and bound parameters over the previous mysql
+                implementation to increase site security.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank"
+            href="http://ascendingworld.com">
+          ascendingworld.com
+        </a>
+        <button type="button"  class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="contact-modal" tabindex="-1" role="dialog"
+    aria-labelledby="contact-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" 
+            aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+        <h4 class="modal-title" id="contact-modal-title">
+          Contact Me
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div id="contact" class="row">
+            <div id="contact-info"
+                class="hide embed-responsive embed-responsive-16by9 col-xs-12">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Bootstrap JavaScript CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/main.js"></script>
+</body>
 </html>
