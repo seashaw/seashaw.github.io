@@ -22,13 +22,15 @@
   border-radius: 0px;
   background-color: #000000;
   height: 60px; }
-  #navbar #brand {
-    margin-top: 4px;
+  #navbar .navbar-brand {
     font-family: title;
     color: #FFFFFF;
+    margin-top: 4px;
     font-size: 45px;
     outline: 0;
     text-decoration: none; }
+  #navbar .selected {
+    color: #FF9800; }
   #navbar .navbar-links {
     text-align: right; }
     #navbar .navbar-links .nav-button {
