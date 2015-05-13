@@ -29,8 +29,6 @@
     font-size: 45px;
     outline: 0;
     text-decoration: none; }
-    #navbar #brand:hover {
-      color: #FF9800; }
   #navbar .navbar-links {
     text-align: right; }
     #navbar .navbar-links .nav-button {
@@ -41,8 +39,6 @@
         outline: 0; }
         #navbar .navbar-links .nav-button a:link {
           text-decoration: none; }
-        #navbar .navbar-links .nav-button a:hover {
-          color: #FF9800; }
       #navbar .navbar-links .nav-button .selected {
         color: #FF9800; }
 

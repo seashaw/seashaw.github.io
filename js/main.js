@@ -45,7 +45,6 @@ brand.addEventListener('click', function(event) {
     $('html, body').stop().animate({
         scrollTop: 0
     }, wait);
-    selectLink(event.target);
 }, false);
 
 /**
@@ -57,7 +56,6 @@ works_button.addEventListener('click', function(event) {
     $('html, body').stop().animate({
         scrollTop: works_outer.offsetTop - navbar.offsetHeight + 1
     }, wait);
-    selectLink(event.target);
 }, false);
 
 /**
@@ -69,7 +67,6 @@ about_button.addEventListener('click', function(event) {
     $('html, body').stop().animate({
         scrollTop: about_outer.offsetTop - navbar.offsetHeight + 1
     }, wait);
-    selectLink(event.target);
 }, false);
 
 /**
