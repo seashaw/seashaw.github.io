@@ -98,6 +98,10 @@ function addIframe() {
     p.innerHTML = 'Your browser does not support iframes.';
     iframe.appendChild(p);
     document.getElementById('contact-info').appendChild(iframe);
+    iframe.onload = function() {
+        document.getElementById('loading').classList.add('hide');
+        document.getElementById('contact-info').classList.remove('hide');
+    }
 }
 
 function removeIframe () {
@@ -113,5 +117,4 @@ cb.addEventListener('click', function(event) {
     if (document.getElementById('form-iframe') == undefined) {
         addIframe();
     }
-    document.getElementById('contact-info').classList.remove('hide');
 }, false);

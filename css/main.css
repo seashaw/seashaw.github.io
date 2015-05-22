@@ -112,6 +112,8 @@
     border-radius: 2px; }
     .modal .modal-dialog .modal-content .modal-body #contact-info {
       height: 450px; }
+    .modal .modal-dialog .modal-content .modal-body #loading {
+      text-align: center; }
     .modal .modal-dialog .modal-content .modal-footer .btn {
       outline: none;
       text-decoration: none;
